@@ -54,7 +54,7 @@ class producto(db.Model):
     codigo_producto = db.Column(db.String())
     nombre_producto = db.Column(db.String(100))
     cantidad = db.Column(db.Integer)
-    unidad_de_medida_de_la_cantidad = db.Column(db.Float, unique=True)
+    unidad_de_medida_de_la_cantidad = db.Column(db.Float)
     total = db.column_property(unidad_de_medida_de_la_cantidad * cantidad)
     pedidos =  db.relationship('pediddos_por_producto', back_populates="producto")
 
@@ -67,20 +67,3 @@ class producto(db.Model):
         self.unidad_de_medida_de_la_cantidad = unidad_de_medida_de_la_cantidad
 
 
-
-
-
-
-"""class productos_por_pedido(db.Model):
-    __tablename__ = 'productos_por_pedido'
-    id = db.Column(db.Integer, primary_key=True)
-    pedido_id = db.Column(db.Integer,db.ForeignKey('pedido.id'), nullable = False)
-    pedido = db.relationship('pedido',backref=db.backref('productos_por_pedido', lazy='select'))
-    producto_id = db.Column(db.Integer,db.ForeignKey('producto.id'), nullable = False)
-    producto = db.relationship('producto', backref=db.backref('productos_por_pedido', lazy='select'))
-
-    def __init__(self, pedido_id, producto_id,catidad_producto):
-        self.pedido_id = pedido_id
-        self.producto_id = producto_id
-        self.catidad_producto = catidad_producto
-"""
