@@ -1,0 +1,22 @@
+
+{% extends admin_base_template %}
+{% block head_css %}
+    {{ super() }}
+<style>
+    .container
+        {
+            max-width: 100% !important;
+        }
+        .navbar {
+            font-family: "Montserrat", Sans-serif !important;
+            background-color:#f9cd45 !important;
+            border-color:#f9cd45 !important;
+            border-width: 1px;
+            border-radius: 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top: none;
+            box-shadow: none;
+        }
+    </style>
+{% endblock %}

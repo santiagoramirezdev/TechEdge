@@ -1,0 +1,18 @@
+{% extends admin_base_template %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block head_css %}
+{{ super() }}
+
+{% endblock %}
+
+
+{% block body %}
+    <div class="container">
+
+      <form class="form-signin" method="POST" action="/generar_factura">
+        <h2 class="form-signin-heading">Generar Factura en pdf</h2>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Generar Factura en pdf</button>
+      </form>
+
+    </div> <!-- /container -->
+{% endblock %}
