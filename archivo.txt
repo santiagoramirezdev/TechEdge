@@ -2,28 +2,28 @@ pdf reporte
 
 
 id del pedido:  1
-nombre_completo_cliente: santiago ramirez
+nombre_completo_cliente: santiago ramirez pinilla
 cedula_cliente: 12035
-fecha_pedido: 2022-02-16
+fecha_pedido: 2022-02-19
 correo_cliente: santiagoxrp@gmail.com
 direccion:cliente: calle falsa
-moneda_pedido: COP
+moneda_pedido: USD
 
 
-codigo_producto: AB1
+codigo_producto: SW1
 id_producto: 1
 nombre_producto: switch brown
-unidad_de_medidad_de_la_cantidad_producto: 7000.0
-total_producto: 14000.0
-cantidad_producto: 2
+unidad_de_medidad_de_la_cantidad_producto: 4000.0
+total_producto: 12000.0
+cantidad_producto: 3
 
 
 codigo_producto: swg
 id_producto: 2
 nombre_producto: switch green
-unidad_de_medidad_de_la_cantidad_producto: 4000.0
-total_producto: 8000.0
-cantidad_producto: 2
+unidad_de_medidad_de_la_cantidad_producto: 4500.0
+total_producto: 22500.0
+cantidad_producto: 5
 
 
-el total de la factura es: 22000.0
+el total de la factura es: 34500.0

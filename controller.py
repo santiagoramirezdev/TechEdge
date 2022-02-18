@@ -90,7 +90,7 @@ class usuariosModelView(ModelView):
     """
     """
     column_display_pk = True
-    can_delete = True
+    can_delete = False
     can_edit = True
     column_default_sort = 'id'
     column_searchable_list = ['id', 'username']

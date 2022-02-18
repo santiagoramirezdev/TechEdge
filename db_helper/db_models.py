@@ -28,7 +28,6 @@ class pediddos_por_producto(db.Model):
 
 
 
-
 class pedido(db.Model):
     __tablename__ = 'pedido'
     id = db.Column(db.Integer, primary_key=True)
@@ -57,8 +56,6 @@ class producto(db.Model):
     unidad_de_medida_de_la_cantidad = db.Column(db.Float)
     total = db.column_property(unidad_de_medida_de_la_cantidad * cantidad)
     pedidos =  db.relationship('pediddos_por_producto', back_populates="producto")
-
-
 
     def __init__(self, codigo_producto, nombre_producto,cantidad,unidad_de_medida_de_la_cantidad):
         self.codigo_producto = codigo_producto
